@@ -1,0 +1,236 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right;
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left;
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: Helvetica, Arial, sans-serif;
+     background-image: url("../img/bugattiHotPursuit.png");
+     background-size: cover;
+     background-repeat: no-repeat;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+
+header {
+
+}
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+#container{
+  width: 960px;
+	margin: 0 auto;
+  position: relative;
+  height: 750px;
+  width: 450px;
+  margin-top: 25px;
+  background-color: #93939e;
+  overflow: hidden;
+}
+.line1{
+  position: absolute;
+  height: 150px;
+  width: 4%;
+  margin-left: 22%;
+  background-color: #E9E91B;
+}
+.line2{
+  position: absolute;
+  height: 150px;
+  width: 4%;
+  margin-left: 48%;
+  background-color: #E9E91B;
+}
+.line3{
+  position: absolute;
+  height: 150px;
+  width: 4%;
+  margin-left: 72%;
+  background-color: #E9E91B;
+}
+#line_1{
+  top: -150px;
+}
+#line_2{
+  top: 150px;
+}
+#line_3{
+  top: 450px;
+}
+.bugattiSize{
+  position: absolute;
+  height: 115px;
+  width: 55px;
+  border-radius: 100px;
+}
+.bugattiCar{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+#car{
+  bottom: 8%;
+  left: 60%;
+}
+.copCar{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.copSize{
+  position: absolute;
+  height: 110px;
+  width: 55px;
+  border-radius: 100px;
+}
+#cop_1{
+  top: -100px;
+  left: 60%;
+}
+#cop_2{
+  top: -200px;
+  left: 40%;
+}
+#cop_3{
+  top: -350px;
+  left: 50%;
+}
+#restart_div {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #93939e;
+  font-family: sans-serif;
+  font-size: 36px;
+  text-align: center;
+  display: none;
+}
+#restart {
+  width: 60%;
+  border: none;
+  background-color: #cc0000;
+  font-weight: bold;
+  margin-top: 30%;
+  margin-left: 20%;
+  border-radius: 20px;
+  padding-bottom: 16px;
+}
+#restart h5 , h6 {
+  margin: 0;
+  font-size: 36px;
+  color: white;
+  line-height: 40px;
+}
+#restart h4 {
+  margin: 10px;
+  font-size: 75px;
+  color: black;
+  line-height: 67px;
+  padding-top: 10px;
+}
+#score_div{
+  position: absolute;
+  margin-top: 23%;
+  margin-left: 10%;
+  font-size: 36px;
+  background-color: #cc0000;
+  color: white;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 4px 4px 0px 1px #93939e;
+}
+#score_div h3 {
+  font-size: 35px;
+  height: 45px;
+}
+#rules_div{
+  position: absolute;
+  margin-top: 10%;
+  margin-left: 70%;
+  font-size: 21px;
+  background-color: #cc0000;
+  color: white;
+  padding: 10px;
+  border-radius: 20px;
+  width: 26%;
+  box-shadow: 4px 4px 0px 1px #93939e;
+  text-align: center;
+}
+#rules_div h3 {
+  margin: 0 auto;
+  color: black;
+  font-size: 48px;
+  border-bottom: 10px solid lightblue;
+  height: 70px;
+}
+footer {
+
+
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+header, footer{
+ height: 100px;
+ border: 1px solid black;
+ clear: both;
+
+}
+section{
+  height: 200px;
+  width: 50%;
+  border: 1px solid black;
+  float:left;
+}
+#main{
+  width: 100%;
+}
